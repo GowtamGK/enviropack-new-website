@@ -1,0 +1,369 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50; /* Background color for the navbar */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Add subtle shadow for the navbar */
+    transition: box-shadow 0.3s ease; /* Optional: Smooth shadow effect when scrolling */
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5em 0; /* Adjust padding as needed */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px; /* Optional: Adjust letter spacing for styling */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Text color */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Adds shadow at the bottom of the hero section */
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Push video to the background */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensure text is above the video */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); /* Optional: Semi-transparent background for better readability */
+    border-radius: 8px;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Optional text shadow */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.features img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Ensure all images are the same height */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    display: block; /* Ensures no inline spacing issues */
+    margin: 0 auto; /* Centers the images */
+}
+
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.product {
+    text-align: center;
+    max-width: 200px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #137019;
+    color: #ffffff;
+    padding: 2em 0;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2em;
+}
+
+.footer-about {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-about img {
+    width: 150px;
+    margin-bottom: 1em;
+}
+
+.footer-about p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.social-links {
+    margin-top: 1em;
+}
+
+.social-links a {
+    color: #ffffff; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    margin: 0 0.5em; /* Spacing between icons */
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4CAF50; /* Hover color */
+}
+
+.footer-links,
+.footer-contact,
+.footer-newsletter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-newsletter h3 {
+    color: #5bc45f; /* Choose a different color for the header text */
+    font-size: 1.4rem; /* Optional: Make the headers slightly larger */
+    text-transform: uppercase; /* Optional: Make the headers all caps for emphasis */
+    margin-bottom: 1em;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5em;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff; /* Change to white */
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #4CAF50; /* Highlight color on hover */
+}
+
+.footer-contact p {
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i {
+    margin-right: 0.5em;
+    color: #ffffff;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#newsletter-email {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#newsletter-form button {
+    padding: 0.5em 1.5em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#newsletter-form button:hover {
+    background-color: #137019;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #ddd;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features, .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.why-choose {
+    text-align: center;
+    padding: 2em;
+}
+
+.why-choose h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #137019;
+}
+
+.why-choose p {
+    margin-bottom: 2em;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.sustainability-image {
+    margin-bottom: 2em;
+}
+
+.sustainability-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; /* Optional styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional styling */
+}
+
+.certifications {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap; /* Allows the items to stack on smaller screens */
+}
+
+.certification {
+    max-width: 300px;
+    text-align: center;
+}
+
+.certification img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1em;
+}
+
+.certification h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.certification p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Initial hidden state */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Visible state when scrolled into view */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
